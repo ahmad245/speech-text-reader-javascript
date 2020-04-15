@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="game">
+            <div class="row">
+                <div class="col s12 center">
+                    <span class="text">Speech Text Reader</span>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <a href="#modal1" class="waves-effect waves-light  modal-trigger blue btn">Toggel Text Box</a>
+                </div>
+            </div>
+
+            <div id="container" class="row">
+              
+              </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal Trigger -->
+    <a id="modal" class="waves-effect waves-light btn modal-trigger hide" href="#modal1">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal modal-close">x</span>
+            <h4>Choose Voice</h4>
+            <div class="row">
+            <div class="input-field col s12 lang">
+                <select id="voice">
+                <option value="" disabled selected>Choose your option</option>
+               
+                 
+                </select>
+                <label></label>
+              </div>
+            </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12 enter-text">
+                      <textarea id="text" cols="50" rows="10" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Textarea</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button id="read" class="modal-close waves-effect waves-green btn-flat read">Read Text</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js">  </script>
+</body>
+
+</html>
